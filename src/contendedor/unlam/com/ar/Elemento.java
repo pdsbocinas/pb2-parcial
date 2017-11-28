@@ -4,6 +4,12 @@ public class Elemento {
 	private Integer id;
 	private Integer peso;
 	
+	public Elemento(Integer id, Integer peso) {
+		super();
+		this.id = id;
+		this.peso = peso;
+	}
+
 	public Integer getId() {
 		return id;
 	}
