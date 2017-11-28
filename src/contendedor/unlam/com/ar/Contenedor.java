@@ -37,17 +37,17 @@ public class Contenedor {
 	}
 	
 	public boolean agregarElemento (Elemento elemento) {
-        if(elementos.size() >= cantidadMaxima) {
-            return false;
-        } else {
-        		elementos.add(elemento);
-            
-        		if(elemento.getPeso() > maximo) {
-                	this.maximo = elemento.getPeso();
-            }
-        	    return true;
-        }   
-    }
+		if(elementos.size() >= cantidadMaxima) {
+		    return false;
+		} else {
+		    elementos.add(elemento);
+
+		    if(elemento.getPeso() > maximo) {
+			this.maximo = elemento.getPeso();
+		    }
+		    return true;
+		}   
+    	}
 	
 	public Integer contarElementos () {
 		return elementos.size();
@@ -57,8 +57,8 @@ public class Contenedor {
 		int pesoTotal = 0;
 		
 		for(Elemento item : elementos) {
-            pesoTotal = pesoTotal + item.getPeso();
-        }
+            		pesoTotal = pesoTotal + item.getPeso();
+        	}
 		
 		return pesoTotal;
 	}
